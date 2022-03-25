@@ -1,0 +1,63 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 150px);
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    gap: 10px;
+    grid-template-areas: 
+    "color2 risk budget overall"
+    "employee employee budget overall"
+    "employee employee projected workload"
+    "planning planning planning workload";
+}
+
+.grid-container__color{
+    background-color: aqua;
+    /* height: 100px; */
+    grid-area: color2;
+}
+
+.grid-container__risk{
+    background-color: orange;
+    /* height: 100px; */
+    grid-area: risk;
+}
+
+.grid-container__budget{
+    background-color: blue;
+    /* height: 100px; */
+    grid-area: budget;
+}
+
+.grid-container__overall{
+    background-color: green;
+    /* height: 100px; */
+    grid-area: overall;
+}
+
+.grid-container__employee{
+    background-color: grey;
+    /* height: 100px; */
+    grid-area: employee;
+}
+
+.grid-container__projected{
+    background-color: pink;
+    /* height: 100px; */
+    grid-area: projected;
+}
+
+.grid-container__workbload{
+    background-color: black;
+    /* height: 100px; */
+    grid-area: workload;
+}
+
+.grid-container__planning{
+    background-color: blueviolet;
+    /* height: 100px; */
+    grid-area: planning;
+}
+
